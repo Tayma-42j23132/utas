@@ -2,21 +2,25 @@
 <html>
 <head>
     <title>My Mini Project</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f5f5f5; padding: 40px; }
+        h1 { color: #333; }
+        p { color: #555; margin: 10px 0; }
+        button { padding: 10px 20px; font-size: 16px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        #output { margin-top: 15px; font-size: 18px; color: green; font-weight: bold; }
+    </style>
 </head>
 <body>
-    <h1>👋 Hello! Welcome to My Website</h1>
-    
-    <p>This is my first website hosted on GitHub Pages!</p>
-    
-    <button onclick="showMessage()">Click Me 😊</button>
-    
+    <h1>🎓 My First Website</h1>
+    <p>Hello! This is my mini project hosted on GitHub Pages.</p>
+    <button onclick="showMessage()">Click Me</button>
     <p id="output"></p>
     
-    <footer>
-        <p>Made with ❤️ | Hosted on GitHub Pages</p>
-    </footer>
-    
-    <script src="script.js"></script>
+    <script>
+        function showMessage() {
+            document.getElementById("output").innerHTML = "✅ Website is working! Thanks for visiting.";
+        }
+    </script>
 </body>
 </html>
